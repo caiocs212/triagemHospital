@@ -1,0 +1,11 @@
+*{
+ color: white;   
+}body{
+    text-align: center;
+    background-color: rgb(75, 118, 143);
+}h1{
+    color: white;
+    font-weight: bolder;
+}button, input, select, option{
+    color: black;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "progclasse03",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "keywords": [
+    "Node.js",
+    "wedpack",
+    "jest",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Caio Gonçalves",
+  "license": "IMT",
+  "description": "sistema para triagem medica",
+  "dependencies": {
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1"
+  }
+}
