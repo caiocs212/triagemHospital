@@ -3,13 +3,16 @@ const Paciente = require('./models/Paciente')
 let cadastrar = document.getElementById('cadastrar')
 let mostrar = document.getElementById('mostrar')
 let resposta = document.getElementById('resposta')
+let pacientes = []
 let contPac = 0
 
 cadastrar.addEventListener('click', () =>{
     contPac++
 
     let pac = new Paciente (Number(contPac), document.getElementById('nome').value, Number(document.getElementById('peso').value), Number(document.getElementById('altura').value), Number(document.getElementById('circCintura').value), Number(document.getElementById('circQuadril').value), document.getElementById('genero').value)
+    pacientes.push(pac)
     console.log(pac)
+    console.table(pacientes)
 
     let imc
     imc = pac.calcularIMC()
