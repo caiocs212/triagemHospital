@@ -12,10 +12,10 @@ class Paciente{
     
 
     calcularIMC(){
-        return this.peso / this.altura * this.altura
+        return this.peso/(this.altura * this.altura)
     }
     calcularRCQ(){
-        return this.circCinturta / this.circQuadril
+        return this.circCintura/this.circQuadril
     }
     classificarIMC(){
         let imc = this.calcularIMC()
@@ -38,9 +38,10 @@ class Paciente{
     }
     classificarRCQ(){
         let rcq = this.calcularRCQ()
+        console.log('genero', this.genero)
 
         switch(this.genero){
-            case 'm':
+            case 'M':
                 if(rcq < 0.90){
                     return 'risco baixo'
                 }else if(rcq >= 0.90 && rcq <= 1.0){
@@ -49,7 +50,7 @@ class Paciente{
                     return 'risco alto'
                 }
             break
-            case 'f':
+            case 'F':
                  if(rcq < 0.80){
                     return 'risco baixo'
                 }else if(rcq >= 0.80 && rcq <= 0.85){
